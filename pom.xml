@@ -120,7 +120,7 @@
 					<version>3.8.1</version>
 					<configuration>
                                             <release>13</release>
-                                            <optimise>true</optimise>
+                                            <!-- <optimise>true</optimise> -->
 					</configuration>
 				</plugin>
 			</plugins>

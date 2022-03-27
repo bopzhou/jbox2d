@@ -118,7 +118,8 @@ public class MathUtils extends PlatformMathUtils {
     if (Settings.SINCOS_LUT_ENABLED) {
       return sinLUT(HALF_PI - x);
     } else {
-      return (float) StrictMath.cos(x);
+      // return (float) StrictMath.cos(x);
+      return (float) Math.cos(x);
     }
   }
 
@@ -126,7 +127,8 @@ public class MathUtils extends PlatformMathUtils {
     if (Settings.FAST_ABS) {
       return x > 0 ? x : -x;
     } else {
-      return StrictMath.abs(x);
+      // return StrictMath.abs(x);
+      return Math.abs(x);
     }
   }
 
@@ -143,7 +145,8 @@ public class MathUtils extends PlatformMathUtils {
     if (Settings.FAST_FLOOR) {
       return fastFloor(x);
     } else {
-      return (int) StrictMath.floor(x);
+      // return (int) StrictMath.floor(x);
+      return (int) Math.floor(x);
     }
   }
 
@@ -159,7 +162,8 @@ public class MathUtils extends PlatformMathUtils {
     if (Settings.FAST_CEIL) {
       return fastCeil(x);
     } else {
-      return (int) StrictMath.ceil(x);
+      // return (int) StrictMath.ceil(x);
+      return (int) Math.ceil(x);
     }
   }
 
@@ -260,7 +264,8 @@ public class MathUtils extends PlatformMathUtils {
     if (Settings.FAST_POW) {
       return fastPow(a, b);
     } else {
-      return (float) StrictMath.pow(a, b);
+      // return (float) StrictMath.pow(a, b);
+      return (float) Math.pow(a, b);
     }
   }
 
